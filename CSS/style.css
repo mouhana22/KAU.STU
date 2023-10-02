@@ -1,0 +1,16 @@
+
+body{
+    font-family: 'El Messiri', sans-serif;
+}
+.smallImages{
+    width: 32px; 
+    background-color: white;
+}
+.nav-link{
+    color: black;
+}
+.landing{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+    min-height: calc(100vh - 72px);
+}
