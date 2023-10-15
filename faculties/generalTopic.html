@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>STU.KAU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"><b>STU.KAU</b></a>
+        <div class="vr d-none d-lg-block"></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active p-lg-3" aria-current="page" href="../index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../index.html#faculties">الكليات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="FCIT.html#departments">الاقسام</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="department.html">المواد</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <!-- Button trigger sign in modal -->
+              <button
+                type="button"
+                class="btn btn-outline-primary rounded-pill me-2 mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#signInModal"
+              >
+                تسجيل الدخول
+              </button>
+            </li>
+            <li class="nav-item">
+              <!-- Button trigger sign up modal -->
+              <button
+                type="button"
+                class="btn btn-primary rounded-pill me-2 mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#signUpModal"
+              >
+                انشاء حساب
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+        <!-- sign in Modal -->
+        <div
+        class="modal fade"
+        id="signInModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                تسجيل الدخول
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">البريد الالكتروني</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">كلمة المرور</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="row mx-2">
+                        <button type="submit" class="btn btn-primary rounded-pill">تسجيل الدخول</button>
+                        </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- sign up Modal -->
+       <div
+       class="modal fade"
+       id="signUpModal"
+       tabindex="-1"
+       aria-labelledby="exampleModalLabel"
+       aria-hidden="true"
+     >
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h1 class="modal-title fs-5" id="exampleModalLabel">
+               انشاء حساب
+             </h1>
+             <button
+               type="button"
+               class="btn-close"
+               data-bs-dismiss="modal"
+               aria-label="Close"
+             ></button>
+           </div>
+           <div class="modal-body">
+               <form>
+                <div class="mb-3">
+                    <label for="" class="form-label">اسم المستخدم</label>
+                    <input type="text" class="form-control" id="username">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">الكلية:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option value="1">كلية الحاسبات وتقنية المعلومات</option>
+                    <option value="2">كلية الهندسة</option>
+                    <option value="3">كلية العلوم</option>
+                    <option value="3">كلية الاقتصاد والادارة</option>
+                  </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">التخصص</label>
+                    <input type="text" class="form-control" id="">
+                  </div>
+                   <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">البريد الالكتروني</label>
+                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   </div>
+                   <div class="mb-3">
+                     <label for="exampleInputPassword1" class="form-label">كلمة المرور</label>
+                     <input type="password" class="form-control" id="exampleInputPassword1">
+                   </div>
+                   <div class="row mx-2">
+                   <button type="submit" class="btn btn-primary rounded-pill">انشاء حساب</button>
+                   </div>
+                   <small class="text-muted text-center mx-4">بانشائك حساب , انت توافق على الشروط والاحكام.</small>
+               </form>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+
+    <div class="container px-4 py-5">
+      <div class="text-center">
+        <h2>مشاركة عامة</h2>
+        <p>مشاركة عامة بخصوص موضوع كذا وكذا</p>
+        <hr />
+
+        <!-- Button trigger writing blog modal -->
+        <button
+          type="button"
+          class="btn btn-outline-primary rounded-pill col-sm-3"
+          data-bs-toggle="modal"
+          data-bs-target="#writingModal"
+        >
+          كتابة تدوينة
+        </button>
+
+        <!-- writing blog Modal -->
+        <div
+          class="modal fade"
+          id="writingModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  كتابة تدوينة
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >عنوان التدوينة</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="تجربتي في مادة برمجة 1"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >محتوى التدوينة</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  الغاء
+                </button>
+                <button type="button" class="btn btn-primary">ارسال</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ol class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="card my-3">
+            <h4 class="card-header blog-post-meta">مهنا المهنا 1 يناير 2021</h4>
+            <div class="card-body">
+              <div class="bd-example m-0 border-0">
+                <nav>
+                  <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                    <button
+                      class="nav-link active"
+                      id="nav-home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-home-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    >
+                      التدوينة
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="nav-profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-profile-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      الملف الشخصي
+                    </button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade active show"
+                    id="nav-home-1"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+                  >
+                    <div class="px-3">
+                      <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
+                      <p class="card-text">
+                        لم تدرس النصوص العربية (عند القدماء) دراسة مستقلة بل
+                        كانت هذه الدراسة مقسمة بين النقد والبلاغة وعلم القوعد
+                        وغيرها وفي الحقيقة، درست النصوص العربية صرفاً أو نحواً
+                        وغيرهما في الزمن القديم على مستوى الجملة أو تتآل من
+                        الجمل لكن علم لغة النص الحديث لا يرى أن النص تتآل من
+                        الجمل الكثيرة فالنص هو ليس بمجرد جانب من جوانب الواقع
+                        اللغوي بل هو جزء فعلي من الواقع بلحمه ودمه. ولذلك لا
+                        يتوقف «علم لغة النص» عند كلمات النص وتحليلها في مستويات
+                        الدرس اللغوي صوتاً ونحواً وصرفاً ودلالةً فقط، بل يهتم أن
+                        ينفذ ما يكون وراء النص من جميع العوامل المعرفية والنفسية
+                        والاجتماعية ومن العمليات العقلية لأن النص حصيلة لتفاعل
+                        جميع هذه العوامل ونجد أن علم لغة النص يركز على العلوم
+                        الأخرى أيضاً التي تهتم بالاتصال الإنساني مثل علم
+                        الاجتماع وعلم النفس وغيرها. ولعلم لغة النص ملامح واضحة
+                        والقسمات فقد بنى لنفسه معايير تأسيسية وتنظيمية وكلاهما
+                        يساعدان في أن يتميز النص عن غيره من المنطوقات ويدرسان
+                        جودة النص وفعاليته وملائمته. لم يظهر مصطلح «علم لغة
+                        النص» في الدراسات اللغوية عند القدماء من علماء اللغة
+                        العربية ولكننا نجد أنه بالغ الأهمية بدراسة / بقراءة
+                        الأفكار التي يقدمها المحدثون الغربيون بهذا الشأن وقد
+                        يستثنى عبد القاهر من الحكم السابق لأنه قدم نظرية النظم
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-profile-1"
+                    role="tabpanel"
+                    aria-labelledby="nav-profile-tab"
+                  >
+                    <div class="px-3">
+                      <p>الاسم: مهنا المهنا</p>
+                      <p>الجامعة: الملك عبدالعزيز</p>
+                      <p>التخصص: علوم حاسب</p>
+                      <p>الدفعة: 20</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="card my-3">
+            <h4 class="card-header blog-post-meta">مهنا المهنا 1 يناير 2021</h4>
+            <div class="card-body">
+              <div class="bd-example m-0 border-0">
+                <nav>
+                  <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                    <button
+                      class="nav-link active"
+                      id="nav-home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-home-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    >
+                      التدوينة
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="nav-profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-profile-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      الملف الشخصي
+                    </button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade active show"
+                    id="nav-home-2"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+                  >
+                    <div class="px-3">
+                        <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
+                      <p class="card-text">
+                        لم تدرس النصوص العربية (عند القدماء) دراسة مستقلة بل
+                        كانت هذه الدراسة مقسمة بين النقد والبلاغة وعلم القوعد
+                        وغيرها وفي الحقيقة، درست النصوص العربية صرفاً أو نحواً
+                        وغيرهما في الزمن القديم على مستوى الجملة أو تتآل من
+                        الجمل لكن علم لغة النص الحديث لا يرى أن النص تتآل من
+                        الجمل الكثيرة فالنص هو ليس بمجرد جانب من جوانب الواقع
+                        اللغوي بل هو جزء فعلي من الواقع بلحمه ودمه. ولذلك لا
+                        يتوقف «علم لغة النص» عند كلمات النص وتحليلها في مستويات
+                        الدرس اللغوي صوتاً ونحواً وصرفاً ودلالةً فقط، بل يهتم أن
+                        ينفذ ما يكون وراء النص من جميع العوامل المعرفية والنفسية
+                        والاجتماعية ومن العمليات العقلية لأن النص حصيلة لتفاعل
+                        جميع هذه العوامل ونجد أن علم لغة النص يركز على العلوم
+                        الأخرى أيضاً التي تهتم بالاتصال الإنساني مثل علم
+                        الاجتماع وعلم النفس وغيرها. ولعلم لغة النص ملامح واضحة
+                        والقسمات فقد بنى لنفسه معايير تأسيسية وتنظيمية وكلاهما
+                        يساعدان في أن يتميز النص عن غيره من المنطوقات ويدرسان
+                        جودة النص وفعاليته وملائمته. لم يظهر مصطلح «علم لغة
+                        النص» في الدراسات اللغوية عند القدماء من علماء اللغة
+                        العربية ولكننا نجد أنه بالغ الأهمية بدراسة / بقراءة
+                        الأفكار التي يقدمها المحدثون الغربيون بهذا الشأن وقد
+                        يستثنى عبد القاهر من الحكم السابق لأنه قدم نظرية النظم
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-profile-2"
+                    role="tabpanel"
+                    aria-labelledby="nav-profile-tab"
+                  >
+                    <div class="px-3">
+                      <p>الاسم: مهنا المهنا</p>
+                      <p>الجامعة: الملك عبدالعزيز</p>
+                      <p>التخصص: علوم حاسب</p>
+                      <p>الدفعة: 20</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="card my-3">
+            <h4 class="card-header blog-post-meta">مهنا المهنا 1 يناير 2021</h4>
+            <div class="card-body">
+              <div class="bd-example m-0 border-0">
+                <nav>
+                  <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                    <button
+                      class="nav-link active"
+                      id="nav-home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-home-3"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    >
+                      التدوينة
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="nav-profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-profile-3"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      الملف الشخصي
+                    </button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade active show"
+                    id="nav-home-3"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+                  >
+                    <div class="px-3">
+                        <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
+                      <p class="card-text">
+                        لم تدرس النصوص العربية (عند القدماء) دراسة مستقلة بل
+                        كانت هذه الدراسة مقسمة بين النقد والبلاغة وعلم القوعد
+                        وغيرها وفي الحقيقة، درست النصوص العربية صرفاً أو نحواً
+                        وغيرهما في الزمن القديم على مستوى الجملة أو تتآل من
+                        الجمل لكن علم لغة النص الحديث لا يرى أن النص تتآل من
+                        الجمل الكثيرة فالنص هو ليس بمجرد جانب من جوانب الواقع
+                        اللغوي بل هو جزء فعلي من الواقع بلحمه ودمه. ولذلك لا
+                        يتوقف «علم لغة النص» عند كلمات النص وتحليلها في مستويات
+                        الدرس اللغوي صوتاً ونحواً وصرفاً ودلالةً فقط، بل يهتم أن
+                        ينفذ ما يكون وراء النص من جميع العوامل المعرفية والنفسية
+                        والاجتماعية ومن العمليات العقلية لأن النص حصيلة لتفاعل
+                        جميع هذه العوامل ونجد أن علم لغة النص يركز على العلوم
+                        الأخرى أيضاً التي تهتم بالاتصال الإنساني مثل علم
+                        الاجتماع وعلم النفس وغيرها. ولعلم لغة النص ملامح واضحة
+                        والقسمات فقد بنى لنفسه معايير تأسيسية وتنظيمية وكلاهما
+                        يساعدان في أن يتميز النص عن غيره من المنطوقات ويدرسان
+                        جودة النص وفعاليته وملائمته. لم يظهر مصطلح «علم لغة
+                        النص» في الدراسات اللغوية عند القدماء من علماء اللغة
+                        العربية ولكننا نجد أنه بالغ الأهمية بدراسة / بقراءة
+                        الأفكار التي يقدمها المحدثون الغربيون بهذا الشأن وقد
+                        يستثنى عبد القاهر من الحكم السابق لأنه قدم نظرية النظم
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-profile-3"
+                    role="tabpanel"
+                    aria-labelledby="nav-profile-tab"
+                  >
+                    <div class="px-3">
+                      <p>الاسم: مهنا المهنا</p>
+                      <p>الجامعة: الملك عبدالعزيز</p>
+                      <p>التخصص: علوم حاسب</p>
+                      <p>الدفعة: 20</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link px-2 text-body-secondary">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <!-- Button trigger contact us modal -->
+            <a
+              class="nav-link px-2 text-body-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#contactUsModal"
+              href=""
+            >
+              اتصل بنا
+            </a>
+
+             <!-- contact us Modal -->
+        <div
+        class="modal fade"
+        id="contactUsModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                اتصل بنا
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">البريد الالكتروني</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >عنوان الرسالة</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >محتوى الرسالة</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                الغاء
+              </button>
+              <button type="button" class="btn btn-primary">ارسال</button>
+            </div>
+          </div>
+        </div>
+      </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >الشروط والاحكام</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 STU.KAU</p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
