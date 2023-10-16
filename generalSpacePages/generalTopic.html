@@ -25,7 +25,7 @@
   </head>
   <body>
     <!--HEADER-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="../index.html"><b>STU.KAU</b></a>
         <div class="vr d-none d-lg-block"></div>
@@ -56,12 +56,14 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="FCIT.html#departments"
-                >الاقسام</a
+              <a class="nav-link p-lg-3" href="../index.html#generalSpace"
+                >المساحة العامة</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="department.html">المواد</a>
+              <a class="nav-link p-lg-3" href="../index.html#importantLinks"
+                >روابط هامة</a
+              >
             </li>
           </ul>
           <ul class="navbar-nav mr-auto">
@@ -97,15 +99,13 @@
       class="modal fade"
       id="signInModal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="SignInHeader"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              تسجيل الدخول
-            </h1>
+            <h1 class="modal-title fs-5" id="SignInHeader">تسجيل الدخول</h1>
             <button
               type="button"
               class="btn-close"
@@ -114,7 +114,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form id="SignInForm" name="SignInForm">
               <div class="mb-3">
                 <label for="SignInEmail" class="form-label"
                   >البريد الالكتروني</label
@@ -123,6 +123,7 @@
                   type="email"
                   class="form-control"
                   id="SignInEmail"
+                  name="SignInEmail"
                   aria-describedby="emailHelp"
                 />
               </div>
@@ -134,6 +135,7 @@
                   type="password"
                   class="form-control"
                   id="SignInPassword"
+                  name="SignInPassword"
                 />
               </div>
               <div class="row mx-2">
@@ -225,7 +227,7 @@
     </div>
 
     <!--General Space Section-->
-    <div class="container px-4 py-5">
+    <div class="container px-4 py-5" id="generalSpace">
       <div class="text-center">
         <h2>مشاركة عامة</h2>
         <p>مشاركة عامة بخصوص موضوع كذا وكذا</p>
@@ -253,7 +255,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  كتابة تدوينة
+                  كتابة مشاركة
                 </h1>
                 <button
                   type="button"
@@ -265,7 +267,7 @@
               <div class="modal-body">
                 <div class="mb-3">
                   <label for="postTitleInput" class="form-label"
-                    >عنوان التدوينة</label
+                    >عنوان المشاركة</label
                   >
                   <input
                     type="text"
@@ -276,7 +278,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="postContentInput" class="form-label"
-                    >محتوى التدوينة</label
+                    >محتوى المشاركة</label
                   >
                   <textarea
                     class="form-control"
@@ -615,22 +617,24 @@
                       />
                     </div>
                     <div class="mb-3">
-                      <label for="messageTitleInput" class="form-label"
+                      <label for="exampleFormControlInput1" class="form-label"
                         >عنوان الرسالة</label
                       >
                       <input
                         type="text"
                         class="form-control"
-                        id="messageTitleInput"
+                        id="exampleFormControlInput1"
                       />
                     </div>
                     <div class="mb-3">
-                      <label for="messageContentInput" class="form-label"
+                      <label
+                        for="exampleFormControlTextarea1"
+                        class="form-label"
                         >محتوى الرسالة</label
                       >
                       <textarea
                         class="form-control"
-                        id="messageContentInput"
+                        id="exampleFormControlTextarea1"
                         rows="3"
                       ></textarea>
                     </div>
