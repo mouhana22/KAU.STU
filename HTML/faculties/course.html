@@ -13,7 +13,7 @@
       integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../../CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +25,7 @@
   </head>
   <body>
     <!--HEADER-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container">
         <a class="navbar-brand" href="../index.html"><b>STU.KAU</b></a>
         <div class="vr d-none d-lg-block"></div>
@@ -56,14 +56,12 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="../index.html#generalSpace"
-                >المساحة العامة</a
+              <a class="nav-link p-lg-3" href="FCIT.html#departments"
+                >الاقسام</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="../index.html#importantLinks"
-                >روابط هامة</a
-              >
+              <a class="nav-link p-lg-3" href="department.html">المواد</a>
             </li>
           </ul>
           <ul class="navbar-nav mr-auto">
@@ -99,13 +97,15 @@
       class="modal fade"
       id="signInModal"
       tabindex="-1"
-      aria-labelledby="SignInHeader"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="SignInHeader">تسجيل الدخول</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              تسجيل الدخول
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -114,7 +114,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form id="SignInForm" name="SignInForm">
+            <form>
               <div class="mb-3">
                 <label for="SignInEmail" class="form-label"
                   >البريد الالكتروني</label
@@ -123,7 +123,6 @@
                   type="email"
                   class="form-control"
                   id="SignInEmail"
-                  name="SignInEmail"
                   aria-describedby="emailHelp"
                 />
               </div>
@@ -135,7 +134,6 @@
                   type="password"
                   class="form-control"
                   id="SignInPassword"
-                  name="SignInPassword"
                 />
               </div>
               <div class="row mx-2">
@@ -226,11 +224,11 @@
       </div>
     </div>
 
-    <!--General Space Section-->
-    <div class="container px-4 py-5" id="generalSpace">
+    <!--Course Space Section-->
+    <div class="container px-4 py-5" id="courseSpace">
       <div class="text-center">
-        <h2>مشاركة عامة</h2>
-        <p>مشاركة عامة بخصوص موضوع كذا وكذا</p>
+        <h2>CPCS-202</h2>
+        <p>برمجة المستوى الاول (جافا) | Programming 1 (JAVA)</p>
         <hr />
 
         <!-- Button trigger writing blog modal -->
@@ -255,7 +253,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  كتابة مشاركة
+                  كتابة تدوينة
                 </h1>
                 <button
                   type="button"
@@ -267,7 +265,7 @@
               <div class="modal-body">
                 <div class="mb-3">
                   <label for="postTitleInput" class="form-label"
-                    >عنوان المشاركة</label
+                    >عنوان التدوينة</label
                   >
                   <input
                     type="text"
@@ -278,7 +276,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="postContentInput" class="form-label"
-                    >محتوى المشاركة</label
+                    >محتوى التدوينة</label
                   >
                   <textarea
                     class="form-control"
@@ -344,8 +342,8 @@
                     aria-labelledby="nav-home-tab"
                   >
                     <div class="px-3">
-                      <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
-                      <blockquote class="card-text">
+                      <h5 class="card-title">تجربتي مع برمجة ١</h5>
+                      <p class="card-text">
                         لم تدرس النصوص العربية (عند القدماء) دراسة مستقلة بل
                         كانت هذه الدراسة مقسمة بين النقد والبلاغة وعلم القوعد
                         وغيرها وفي الحقيقة، درست النصوص العربية صرفاً أو نحواً
@@ -367,7 +365,7 @@
                         العربية ولكننا نجد أنه بالغ الأهمية بدراسة / بقراءة
                         الأفكار التي يقدمها المحدثون الغربيون بهذا الشأن وقد
                         يستثنى عبد القاهر من الحكم السابق لأنه قدم نظرية النظم
-                      </blockquote>
+                      </p>
                     </div>
                   </div>
                   <div
@@ -430,8 +428,8 @@
                     aria-labelledby="nav-home-tab"
                   >
                     <div class="px-3">
-                      <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
-                      <blockquote class="card-text">
+                      <h5 class="card-title">تجربتي مع برمجة ١</h5>
+                      <p class="card-text">
                         لم تدرس النصوص العربية (عند القدماء) دراسة مستقلة بل
                         كانت هذه الدراسة مقسمة بين النقد والبلاغة وعلم القوعد
                         وغيرها وفي الحقيقة، درست النصوص العربية صرفاً أو نحواً
@@ -453,7 +451,7 @@
                         العربية ولكننا نجد أنه بالغ الأهمية بدراسة / بقراءة
                         الأفكار التي يقدمها المحدثون الغربيون بهذا الشأن وقد
                         يستثنى عبد القاهر من الحكم السابق لأنه قدم نظرية النظم
-                      </blockquote>
+                      </p>
                     </div>
                   </div>
                   <div
@@ -516,8 +514,8 @@
                     aria-labelledby="nav-home-tab"
                   >
                     <div class="px-3">
-                      <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
-                      <blockquote class="card-text">
+                      <h5 class="card-title">تجربتي مع برمجة ١</h5>
+                      <p class="card-text">
                         لم تدرس النصوص العربية (عند القدماء) دراسة مستقلة بل
                         كانت هذه الدراسة مقسمة بين النقد والبلاغة وعلم القوعد
                         وغيرها وفي الحقيقة، درست النصوص العربية صرفاً أو نحواً
@@ -539,7 +537,7 @@
                         العربية ولكننا نجد أنه بالغ الأهمية بدراسة / بقراءة
                         الأفكار التي يقدمها المحدثون الغربيون بهذا الشأن وقد
                         يستثنى عبد القاهر من الحكم السابق لأنه قدم نظرية النظم
-                      </blockquote>
+                      </p>
                     </div>
                   </div>
                   <div
@@ -617,24 +615,22 @@
                       />
                     </div>
                     <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"
+                      <label for="messageTitleInput" class="form-label"
                         >عنوان الرسالة</label
                       >
                       <input
                         type="text"
                         class="form-control"
-                        id="exampleFormControlInput1"
+                        id="messageTitleInput"
                       />
                     </div>
                     <div class="mb-3">
-                      <label
-                        for="exampleFormControlTextarea1"
-                        class="form-label"
+                      <label for="messageContentInput" class="form-label"
                         >محتوى الرسالة</label
                       >
                       <textarea
                         class="form-control"
-                        id="exampleFormControlTextarea1"
+                        id="messageContentInput"
                         rows="3"
                       ></textarea>
                     </div>
@@ -659,7 +655,7 @@
             >
           </li>
         </ul>
-        <p class="text-center text-body-secondary">© 2023 STU.KAU</p>
+        <p class="text-center text-body-secondary">&copy; 2023 STU.KAU</p>
       </footer>
     </div>
 
