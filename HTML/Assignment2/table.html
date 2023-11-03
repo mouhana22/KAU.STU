@@ -1,0 +1,482 @@
+<!--Authors: Mouhana Almouhana,  Yazan Alshareef-->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="../../CSS/print.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
+      rel="stylesheet"
+    />
+    <!--Title-->
+    <title>STU.KAU</title>
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html"><b>STU.KAU</b></a>
+        <div class="vr d-none d-lg-block"></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active p-lg-3"
+                aria-current="page"
+                href="../../index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../../index.html#faculties"
+                >الكليات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../../index.html#generalSpace"
+                >المساحة العامة</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" href="../../index.html#importantLinks"
+                >روابط هامة</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <!-- Button trigger sign in modal -->
+              <button
+                type="button"
+                class="btn btn-outline-primary rounded-pill me-2 mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#signInModal"
+              >
+                تسجيل الدخول
+              </button>
+            </li>
+            <li class="nav-item">
+              <!-- Button trigger sign up modal -->
+              <button
+                type="button"
+                class="btn btn-primary rounded-pill me-2 mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#signUpModal"
+              >
+                انشاء حساب
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- sign in Modal -->
+    <div
+      class="modal fade"
+      id="signInModal"
+      tabindex="-1"
+      aria-labelledby="SignInHeader"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="SignInHeader">تسجيل الدخول</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="SignInForm" name="SignInForm">
+              <div class="mb-3">
+                <label for="SignInEmail" class="form-label"
+                  >البريد الالكتروني</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="SignInEmail"
+                  name="SignInEmail"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="SignInPassword" class="form-label"
+                  >كلمة المرور</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="SignInPassword"
+                  name="SignInPassword"
+                />
+              </div>
+              <div class="row mx-2">
+                <button type="submit" class="btn btn-primary rounded-pill">
+                  تسجيل الدخول
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign up Modal -->
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      aria-labelledby="SignUpHeader"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="SignUpHeader">انشاء حساب</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="SignUpForm" name="SignUpForm">
+              <div class="mb-3">
+                <label for="username" class="form-label">اسم المستخدم</label>
+                <input type="text" class="form-control" id="username" />
+              </div>
+              <div class="mb-3">
+                <label for="facultySelect" class="form-label">الكلية:</label>
+                <select
+                  class="form-select"
+                  id="facultySelect"
+                  aria-label="Default select example"
+                >
+                  <option value="1">كلية الحاسبات وتقنية المعلومات</option>
+                  <option value="2">كلية الهندسة</option>
+                  <option value="3">كلية العلوم</option>
+                  <option value="3">كلية الاقتصاد والادارة</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="studentMajor" class="form-label">التخصص</label>
+                <input type="text" class="form-control" id="studentMajor" />
+              </div>
+              <div class="mb-3">
+                <label for="SignUpEmail" class="form-label"
+                  >البريد الالكتروني</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="SignUpEmail"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="SignUpPassword" class="form-label"
+                  >كلمة المرور</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="SignUpPassword"
+                />
+              </div>
+              <div class="row mx-2">
+                <button type="submit" class="btn btn-primary rounded-pill">
+                  انشاء حساب
+                </button>
+              </div>
+              <small class="text-muted text-center mx-4"
+                >بانشائك حساب , انت توافق على الشروط والاحكام.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-4 py-5" id="hanging-icons">
+        <div class="text-center">
+            <h2 class="pb-2 col-sm" id="depSub">التقويم الأكاديمي</h2>
+            <p>Academic Calendar</p>
+            <hr>
+            <table class="table table-bordered printable">
+                <thead>
+                    <tr>
+                        <th scope="row" colspan="4">الترم الأول</th>
+                    </tr>
+                    <tr>
+                      <th scope="col" style="width: 450px;">الحدث</th>
+                      <th scope="col">اليوم</th>
+                      <th scope="col">التاريخ الهجري</th>
+                      <th scope="col">التاريخ الميلادي</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>بداية الترم الأول</td>
+                      <td rowspan="2" style="vertical-align: middle;">الأحد</td>
+                      <td>04/02/1445</td>
+                      <td>20/08/2023</td>
+                    </tr>
+                    <tr>
+                      <td>إجازة اليوم الوطني</td>
+                      <td>09/03/1445</td>
+                      <td>24/09/2023</td>
+                    </tr>
+                    <tr>
+                      <td>إجازة مطولة</td>
+                      <td rowspan="2" style="vertical-align: middle;">الخميس</td>
+                      <td>18/04/1445</td>
+                      <td>02/11/2023</td>
+                    </tr>
+                    <tr>
+                      <td>إجازة منتصف الترم الأول</td>
+                      <td>02/05/1445</td>
+                      <td>16/11/2023</td>
+                    </tr>
+                    <tr>
+                        <td>عودة الدراسة</td>
+                        <td rowspan="3" style="vertical-align: middle;">الأحد</td>
+                        <td>12/05/1445</td>
+                        <td>26/11/2023</td>
+                    </tr>
+                    <tr>
+                        <td>بداية الاختبارات النهائية</td>
+                        <td>26/05/1445</td>
+                        <td>10/12/2023</td>
+                    </tr>
+                    <tr>
+                        <td>إجازة مطولة</td>
+                        <td>04/06/1445</td>
+                        <td>17/12/2023</td>
+                      </tr>
+                      <tr>
+                        <td>آخر يوم اختبارات</td>
+                        <td rowspan="2" style="vertical-align: middle;">الخميس</td>
+                        <td rowspan="2" style="vertical-align: middle;">22/06/1445</td>
+                        <td rowspan="2" style="vertical-align: middle;">04/01/2024</td>
+                      </tr>
+                      <tr>
+                        <td>إجازة الفصل الدراسي الأول</td>
+                      </tr>
+                  </tbody>
+            </table>
+            <br>
+            <table class="table table-bordered printable">
+                <thead>
+                    <tr>
+                        <th scope="row" colspan="4">الترم الثاني</th>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="width: 450px;">الحدث</th>
+                        <th scope="col">اليوم</th>
+                        <th scope="col">التاريخ الهجري</th>
+                        <th scope="col">التاريخ الميلادي</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>بداية الترم الثاني</td>
+                      <td>الخميس</td>
+                      <td>27/06/1445</td>
+                      <td>09/01/2024</td>
+                    </tr>
+                    <tr>
+                      <td>إجازة مطولة</td>
+                      <td>الأحد</td>
+                      <td>16/07/1445</td>
+                      <td>28/01/2024</td>
+                    </tr>
+                    <tr>
+                      <td>إجازة يوم التأسيس وبدأ إجازة منتصف الترم الثاني</td>
+                      <td>الخميس</td>
+                      <td>12/08/1445</td>
+                      <td>22/02/2024</td>
+                    </tr>
+                    <tr>
+                        <td>عودة الدراسة</td>
+                        <td>الأحد</td>
+                        <td>22/08/1445</td>
+                        <td>03/03/2024</td>
+                      </tr>
+                      <tr>
+                        <td>إجازة عيد الفطر</td>
+                        <td>الخميس</td>
+                        <td>18/09/1445</td>
+                        <td>28/03/2024</td>
+                      </tr>
+                      <tr>
+                        <td>عودة الدراسة</td>
+                        <td>الاثنين</td>
+                        <td>06/10/1445</td>
+                        <td>15/04/2024</td>
+                      </tr>
+                      <tr>
+                        <td>إجازة مطولة	</td>
+                        <td>الخميس</td>
+                        <td>23/10/1445</td>
+                        <td>02/05/2024</td>
+                      </tr>
+                      <tr>
+                        <td>بداية الاختبارات النهائية</td>
+                        <td>الأحد</td>
+                        <td>11/11/1445</td>
+                        <td>19/05/2024</td>
+                      </tr>
+                      <tr>
+                        <td>آخر يوم اختبارات</td>
+                        <td rowspan="2" style="vertical-align: middle;">الاثنين</td>
+                        <td rowspan="2" style="vertical-align: middle;">04/12/1445</td>
+                        <td rowspan="2" style="vertical-align: middle;">10/06/2024</td>
+                      </tr>
+                      <tr>
+                        <td>إجازة الفصل الدراسي الثاني</td>  
+                      </tr>
+                  </tbody>
+            </table>
+            <button type="button" class="btn btn-outline-primary rounded-pill col-sm-3 mb-3" onclick="window.print();">اطبع التقويم</button>
+           
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link px-2 text-body-secondary"
+              >الرئيسية</a
+            >
+          </li>
+          <li class="nav-item">
+            <!-- Button trigger contact us modal -->
+            <a
+              class="nav-link px-2 text-body-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#contactUsModal"
+              href=""
+            >
+              اتصل بنا
+            </a>
+
+            <!-- contact us Modal -->
+            <div
+              class="modal fade"
+              id="contactUsModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      اتصل بنا
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >البريد الالكتروني</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >عنوان الرسالة</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="exampleFormControlTextarea1"
+                        class="form-label"
+                        >محتوى الرسالة</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      الغاء
+                    </button>
+                    <button type="button" class="btn btn-primary">ارسال</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >الشروط والاحكام</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy; 2023 STU.KAU</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
