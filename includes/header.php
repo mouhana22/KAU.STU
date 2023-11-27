@@ -1,33 +1,11 @@
-<!--Authors: Mouhana Almouhana,  Yazan Alshareef-->
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
-      integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../../CSS/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
-      rel="stylesheet"
-    />
-    <!--Title-->
-    <title>STU.KAU</title>
-  </head>
-  <body>
-    <!--HEADER-->
+   
+   <!--HEADER-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand" href="../../index.html"><b>STU.KAU</b></a>
+      <button class="navbar-toggler d-block mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <a class="navbar-brand" href="http://localhost/stu.kau/"><b>STU.KAU</b></a>
         <div class="vr d-none d-lg-block"></div>
         <button
           class="navbar-toggler"
@@ -43,27 +21,18 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link active p-lg-3"
-                aria-current="page"
-                href="../../index.html"
+              <a class="nav-link active p-lg-3" aria-current="page" href="http://localhost/stu.kau/"
                 >الرئيسية</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="../../index.html#faculties"
-                >الكليات</a
-              >
+              <a class="nav-link p-lg-3" href="http://localhost/stu.kau/#faculties">الكليات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="../../index.html#generalSpace"
-                >المساحة العامة</a
-              >
+              <a class="nav-link p-lg-3" href="http://localhost/stu.kau/#generalSpace">المساحة العامة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="../../index.html#importantLinks"
-                >روابط هامة</a
-              >
+              <a class="nav-link p-lg-3" href="http://localhost/stu.kau/#importantLinks">روابط هامة</a>
             </li>
           </ul>
           <ul class="navbar-nav mr-auto">
@@ -225,127 +194,3 @@
         </div>
       </div>
     </div>
-    
-     <!-- video section -->
-    <div class="container text-center mt-5">
-    <div class="card">
-        <h3 class="card-header">الوصول الى الجامعة</h3>
-        <div class="card-body">
-           
-            <object data="https://www.youtube.com/embed/smbFGdcOy7Q" width="560" height="315">
-                <p>Your browser does not support embedded videos.</p>
-            </object>
-            <p class="card-text">مقطع مرئي لتوضيح طرق الوصول الى الجامعة</p>
-          <a href="https://maps.app.goo.gl/kbCrzYoHbj4JvGyq5" class="btn btn-outline-primary rounded-pill">بوابة الطير</a>
-        </div>
-      </div>
-    </div>
-
-    <!--FOOTER-->
-    <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item">
-            <a href="../../index.html" class="nav-link px-2 text-body-secondary"
-              >الرئيسية</a
-            >
-          </li>
-          <li class="nav-item">
-            <!-- Button trigger contact us modal -->
-            <a
-              class="nav-link px-2 text-body-secondary"
-              data-bs-toggle="modal"
-              data-bs-target="#contactUsModal"
-              href=""
-            >
-              اتصل بنا
-            </a>
-
-            <!-- contact us Modal -->
-            <div
-              class="modal fade"
-              id="contactUsModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      اتصل بنا
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="mb-3">
-                      <label for="ContactUsEmail" class="form-label"
-                        >البريد الالكتروني</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="ContactUsEmail"
-                        aria-describedby="emailHelp"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >عنوان الرسالة</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label
-                        for="exampleFormControlTextarea1"
-                        class="form-label"
-                        >محتوى الرسالة</label
-                      >
-                      <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      الغاء
-                    </button>
-                    <button type="button" class="btn btn-primary">ارسال</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary"
-              >الشروط والاحكام</a
-            >
-          </li>
-        </ul>
-        <p class="text-center text-body-secondary">&copy; 2023 STU.KAU</p>
-      </footer>
-    </div>
-
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>

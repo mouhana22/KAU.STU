@@ -1,0 +1,31 @@
+#gallery{
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.selected {
+
+    display: flex;
+    justify-content: center;
+
+}   
+.selected img{
+    margin: 25px;
+    width: 500px;
+    height: 500px;
+    border: solid black;
+}
+
+.thumbnail{
+    display: flex; 
+    justify-content: center; 
+
+}
+.thumbnail img{
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    cursor: pointer; 
+    margin: 25px; 
+    border: solid black;    
+}
