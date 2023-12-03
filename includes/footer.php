@@ -4,7 +4,7 @@
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
-            <a href="http://localhost/stu.kau/" class="nav-link px-2 text-body-secondary">الرئيسية</a>
+            <a href="http://stu-kau.rf.gd/" class="nav-link px-2 text-body-secondary">الرئيسية</a>
           </li>
           <li class="nav-item">
             <!-- Button trigger contact us modal -->
@@ -47,7 +47,6 @@
                         type="email"
                         class="form-control"
                         id="ContactUsEmail"
-                        aria-describedby="emailHelp"
                       />
                     </div>
                     <div class="mb-3">
@@ -94,5 +93,7 @@
           </li>
         </ul>
         <p class="text-center text-body-secondary">&copy; 2023 STU.KAU</p>
+        <a href="https://www.w3.org/Icons/valid-css-blue"><img src="https://www.w3.org/Icons/valid-css-blue" alt="w3c"></a>
+        <a href="https://www.w3.org/Icons/valid-xhtml10"><img src="https://www.w3.org/Icons/valid-xhtml10" alt="w3c"></a>
       </footer>
     </div>

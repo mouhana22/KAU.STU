@@ -51,13 +51,13 @@
           class="modal fade"
           id="writingModal"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
+          aria-labelledby="exampleModalLabel1"
           aria-hidden="true"
         >
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1 class="modal-title fs-5" id="exampleModalLabel1">
                   كتابة تدوينة
                 </h1>
                 <button
@@ -111,27 +111,23 @@
             <div class="card-body">
               <div class="bd-example m-0 border-0">
                 <nav>
-                  <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <div class="nav nav-tabs mb-3"  role="tablist">
                     <button
                       class="nav-link active"
-                      id="nav-home-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-home-1"
                       type="button"
                       role="tab"
-                      aria-controls="nav-home"
                       aria-selected="true"
                     >
                       التدوينة
                     </button>
                     <button
                       class="nav-link"
-                      id="nav-profile-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-profile-1"
                       type="button"
                       role="tab"
-                      aria-controls="nav-profile"
                       aria-selected="false"
                       tabindex="-1"
                     >
@@ -139,12 +135,11 @@
                     </button>
                   </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-content" >
                   <div
                     class="tab-pane fade active show"
                     id="nav-home-1"
                     role="tabpanel"
-                    aria-labelledby="nav-home-tab"
                   >
                     <div class="px-3">
                       <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
@@ -177,7 +172,6 @@
                     class="tab-pane fade"
                     id="nav-profile-1"
                     role="tabpanel"
-                    aria-labelledby="nav-profile-tab"
                   >
                     <div class="px-3">
                       <p>الاسم: مهنا المهنا</p>
@@ -197,27 +191,23 @@
             <div class="card-body">
               <div class="bd-example m-0 border-0">
                 <nav>
-                  <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <div class="nav nav-tabs mb-3"  role="tablist">
                     <button
                       class="nav-link active"
-                      id="nav-home-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-home-2"
                       type="button"
                       role="tab"
-                      aria-controls="nav-home"
                       aria-selected="true"
                     >
                       التدوينة
                     </button>
                     <button
                       class="nav-link"
-                      id="nav-profile-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-profile-2"
                       type="button"
                       role="tab"
-                      aria-controls="nav-profile"
                       aria-selected="false"
                       tabindex="-1"
                     >
@@ -225,12 +215,11 @@
                     </button>
                   </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-content" >
                   <div
                     class="tab-pane fade active show"
                     id="nav-home-2"
                     role="tabpanel"
-                    aria-labelledby="nav-home-tab"
                   >
                     <div class="px-3">
                       <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
@@ -263,7 +252,6 @@
                     class="tab-pane fade"
                     id="nav-profile-2"
                     role="tabpanel"
-                    aria-labelledby="nav-profile-tab"
                   >
                     <div class="px-3">
                       <p>الاسم: مهنا المهنا</p>
@@ -283,27 +271,23 @@
             <div class="card-body">
               <div class="bd-example m-0 border-0">
                 <nav>
-                  <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <div class="nav nav-tabs mb-3"  role="tablist">
                     <button
                       class="nav-link active"
-                      id="nav-home-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-home-3"
                       type="button"
                       role="tab"
-                      aria-controls="nav-home"
                       aria-selected="true"
                     >
                       التدوينة
                     </button>
                     <button
                       class="nav-link"
-                      id="nav-profile-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-profile-3"
                       type="button"
                       role="tab"
-                      aria-controls="nav-profile"
                       aria-selected="false"
                       tabindex="-1"
                     >
@@ -311,12 +295,11 @@
                     </button>
                   </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-content" >
                   <div
                     class="tab-pane fade active show"
                     id="nav-home-3"
                     role="tabpanel"
-                    aria-labelledby="nav-home-tab"
                   >
                     <div class="px-3">
                       <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
@@ -355,7 +338,6 @@
                     class="tab-pane fade"
                     id="nav-profile-3"
                     role="tabpanel"
-                    aria-labelledby="nav-profile-tab"
                   >
                     <div class="px-3">
                       <p>الاسم: مهنا المهنا</p>

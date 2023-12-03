@@ -1,3 +1,6 @@
+
+
+
 function checkName(){
     var letters = /^[A-Za-z\u0621-\u064A]+$/;
     names = document.getElementById('name');
@@ -5,7 +8,8 @@ function checkName(){
         return true;
     }
     else{
-        alert('Please Enter Your Name.\nUse only letters.')
+        alert('Please Enter Your Name.\nUse only letter.')
+
         return false;
     }
 }
@@ -38,3 +42,21 @@ function checkBox(){
         return false;
     }
 }
+
+
+function valid(){
+    
+        document.forms[2].onsubmit = function (e) {
+            let name = checkName();
+            let email = checkEmail();
+            let box = checkBox();
+            if(name === false || email === false || box === false){
+                e.preventDefault()
+            }
+        }
+    
+
+}
+
+
+

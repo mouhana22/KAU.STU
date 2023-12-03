@@ -50,7 +50,7 @@
       <div class="row align-items-center">
         <div class="col-sm">
           <div class="card mb-3">
-            <img src="images/FCITImage.jpeg" class="card-img-top" />
+            <img src="images/FCITImage.jpeg" alt="FCIT logo" class="card-img-top" />
             <div class="card-body">
               <h4 class="card-title">كلية الحاسب</h4>
               <p class="card-text">
@@ -68,7 +68,7 @@
 
         <div class="col-sm">
           <div class="card mb-3">
-            <img src="images/engImage.png" class="card-img-top" />
+            <img src="images/engImage.png" alt="engineering logo" class="card-img-top" />
             <div class="card-body">
               <h4 class="card-title">كلية الهندسة</h4>
               <p class="card-text">
@@ -84,7 +84,7 @@
         </div>
         <div class="col-sm">
           <div class="card mb-3">
-            <img src="images/BusImage.jpeg" class="card-img-top" />
+            <img src="images/BusImage.jpeg" alt="Business logo" class="card-img-top" />
             <div class="card-body">
               <h4 class="card-title">كلية الاقتصاد والادارة</h4>
               <p class="card-text">
@@ -100,7 +100,7 @@
         </div>
         <div class="col-sm">
           <div class="card mb-3">
-            <img src="images/ScienceImage.jpeg" class="card-img-top" />
+            <img src="images/ScienceImage.jpeg" alt="Science logo" class="card-img-top" />
             <div class="card-body">
               <h4 class="card-title">كلية العلوم</h4>
               <p class="card-text">
@@ -126,7 +126,7 @@
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
           >
             <img
-              src="images/student-in-class-svgrepo-com.svg"
+              src="images/student-in-class-svgrepo-com.svg" alt="student image"
               class="smallImages"
             />
           </div>
@@ -148,7 +148,7 @@
           <div
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
           >
-            <img src="images/diploma-svgrepo-com.svg" class="smallImages" />
+            <img src="images/diploma-svgrepo-com.svg" alt="diploma image" class="smallImages"  />
           </div>
           <div>
             <h4 class="text-body-emphasis">التدريب الصيفي | التعاوني</h4>
@@ -169,7 +169,7 @@
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
           >
             <img
-              src="images/student-person-part-2-svgrepo-com.svg"
+              src="images/student-person-part-2-svgrepo-com.svg" alt="student image"
               class="smallImages"
             />
           </div>
@@ -191,7 +191,7 @@
           <div
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
           >
-            <img src="images/group-svgrepo-com.svg" class="smallImages" />
+            <img src="images/group-svgrepo-com.svg" alt="group image" class="smallImages" />
           </div>
           <div>
             <h4 class="text-body-emphasis">مشاركة الخبرات والمهارات</h4>

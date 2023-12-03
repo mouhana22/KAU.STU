@@ -1,11 +1,11 @@
    
    <!--HEADER-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
       <button class="navbar-toggler d-block mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-        <a class="navbar-brand" href="http://localhost/stu.kau/"><b>STU.KAU</b></a>
+        <a class="navbar-brand" href="http://stu-kau.rf.gd/"><b>STU.KAU</b></a>
         <div class="vr d-none d-lg-block"></div>
         <button
           class="navbar-toggler"
@@ -21,18 +21,18 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active p-lg-3" aria-current="page" href="http://localhost/stu.kau/"
+              <a class="nav-link active p-lg-3" aria-current="page" href="http://stu-kau.rf.gd/"
                 >الرئيسية</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="http://localhost/stu.kau/#faculties">الكليات</a>
+              <a class="nav-link p-lg-3" href="http://stu-kau.rf.gd/#faculties">الكليات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="http://localhost/stu.kau/#generalSpace">المساحة العامة</a>
+              <a class="nav-link p-lg-3" href="http://stu-kau.rf.gd/#generalSpace">المساحة العامة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="http://localhost/stu.kau/#importantLinks">روابط هامة</a>
+              <a class="nav-link p-lg-3" href="http://stu-kau.rf.gd/#importantLinks">روابط هامة</a>
             </li>
           </ul>
           <ul class="navbar-nav mr-auto">
@@ -93,7 +93,6 @@
                   class="form-control"
                   id="SignInEmail"
                   name="SignInEmail"
-                  aria-describedby="emailHelp"
                 />
               </div>
               <div class="mb-3">
@@ -168,7 +167,6 @@
                   type="email"
                   class="form-control"
                   id="SignUpEmail"
-                  aria-describedby="emailHelp"
                 />
               </div>
               <div class="mb-3">

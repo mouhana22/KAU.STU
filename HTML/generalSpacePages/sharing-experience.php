@@ -51,13 +51,13 @@
           class="modal fade"
           id="writingModal"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
+          aria-labelledby="exampleModalLabel1"
           aria-hidden="true"
         >
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1 class="modal-title fs-5" id="exampleModalLabel1">
                   كتابة مشاركة
                 </h1>
                 <button
@@ -105,13 +105,13 @@
         </div>
       </div>
 
-      <!--STUDENT POSTS-->
+      <!--GENERAL DISCUSSION-->
       <div class="card">
         <h5 class="card-header fs-4">المشاركات</h5>
         <div class="card-body">
           <ol class="list-group list-group-numbered mb-5">
+            <li>
             <a
-              type="button"
               href="generalTopic.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -121,8 +121,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 7</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="generalTopic.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -132,8 +133,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 2</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="generalTopic.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -143,8 +145,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 8</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="generalTopic.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -154,8 +157,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 3</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="generalTopic.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -165,10 +169,11 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 5</span>
             </a>
+            </li>
           </ol>
         </div>
       </div>
-    </div>
+
 
   
     <?php include("../../includes/footer.php"); ?>

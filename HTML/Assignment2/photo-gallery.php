@@ -43,10 +43,10 @@
 
         <!--Thumbnail images-->
         <div class="thumbnail">
-            <img src="../../images/gallery/fcit.jpg" id="main" alt="fcit logo" onclick="change(this.src)">
-            <img src="../../images/gallery/engineering.jpg" id="main" alt="engineering logo" onclick="change(this.src)">
-            <img src="../../images/gallery/economy.jpg" id="main" alt="economy logo" onclick="change(this.src)">
-            <img src="../../images/gallery/science.png" id="main" alt="science logo" onclick="change(this.src)">
+            <img src="../../images/gallery/fcit.jpg"  alt="fcit logo" onclick="change(this.src)">
+            <img src="../../images/gallery/engineering.jpg" alt="engineering logo" onclick="change(this.src)">
+            <img src="../../images/gallery/economy.jpg" alt="economy logo" onclick="change(this.src)">
+            <img src="../../images/gallery/science.png"  alt="science logo" onclick="change(this.src)">
         </div>
             </div>
         </div>

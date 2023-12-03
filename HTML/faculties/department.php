@@ -14,7 +14,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../../CSS/style.css" />
-    <title>STU.KAU</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,8 +46,8 @@
         <h5 class="card-header fs-4">مساحة مواد القسم</h5>
         <div class="card-body">
           <ol class="list-group list-group-numbered mb-5">
+          <li>
             <a
-              type="button"
               href="course.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -60,8 +59,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 7</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="course.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -73,8 +73,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 10</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="course.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -86,8 +87,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 15</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="course.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -99,8 +101,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 7</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="course.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -112,8 +115,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 10</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="course.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -125,8 +129,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 15</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="course.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -138,8 +143,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 7</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="course.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -151,8 +157,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 10</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="course.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -164,6 +171,7 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 15</span>
             </a>
+            </li>
           </ol>
         </div>
       </div>

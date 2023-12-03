@@ -30,7 +30,7 @@
 
 
     <!--General Space Section-->
-    <div class="container px-4 py-5" id="generalSpace">
+    <div class="container px-4 py-5">
       <div class="text-center">
         <h2>مشاركة عامة</h2>
         <p>مشاركة عامة بخصوص موضوع كذا وكذا</p>
@@ -51,14 +51,14 @@
           class="modal fade"
           id="writingModal"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
+          aria-labelledby="exampleModalLabel1"
           aria-hidden="true"
         >
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  كتابة مشاركة
+                <h1 class="modal-title fs-5" id="exampleModalLabel1">
+                  كتابة تدوينة
                 </h1>
                 <button
                   type="button"
@@ -70,7 +70,7 @@
               <div class="modal-body">
                 <div class="mb-3">
                   <label for="postTitleInput" class="form-label"
-                    >عنوان المشاركة</label
+                    >عنوان التدوينة</label
                   >
                   <input
                     type="text"
@@ -81,7 +81,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="postContentInput" class="form-label"
-                    >محتوى المشاركة</label
+                    >محتوى التدوينة</label
                   >
                   <textarea
                     class="form-control"
@@ -111,27 +111,23 @@
             <div class="card-body">
               <div class="bd-example m-0 border-0">
                 <nav>
-                  <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <div class="nav nav-tabs mb-3"  role="tablist">
                     <button
                       class="nav-link active"
-                      id="nav-home-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-home-1"
                       type="button"
                       role="tab"
-                      aria-controls="nav-home"
                       aria-selected="true"
                     >
                       التدوينة
                     </button>
                     <button
                       class="nav-link"
-                      id="nav-profile-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-profile-1"
                       type="button"
                       role="tab"
-                      aria-controls="nav-profile"
                       aria-selected="false"
                       tabindex="-1"
                     >
@@ -139,17 +135,16 @@
                     </button>
                   </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-content" >
                   <div
                     class="tab-pane fade active show"
                     id="nav-home-1"
                     role="tabpanel"
-                    aria-labelledby="nav-home-tab"
                   >
                     <div class="px-3">
                       <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
                       <blockquote class="card-text">
-                        لم تدرس النصوص العربية (عند القدماء) دراسة مستقلة بل
+                        لم تدرس النصوص العربية <i> (عند القدماء)</i> دراسة مستقلة بل
                         كانت هذه الدراسة مقسمة بين النقد والبلاغة وعلم القوعد
                         وغيرها وفي الحقيقة، درست النصوص العربية صرفاً أو نحواً
                         وغيرهما في الزمن القديم على مستوى الجملة أو تتآل من
@@ -165,8 +160,8 @@
                         الاجتماع وعلم النفس وغيرها. ولعلم لغة النص ملامح واضحة
                         والقسمات فقد بنى لنفسه معايير تأسيسية وتنظيمية وكلاهما
                         يساعدان في أن يتميز النص عن غيره من المنطوقات ويدرسان
-                        جودة النص وفعاليته وملائمته. لم يظهر مصطلح «علم لغة
-                        النص» في الدراسات اللغوية عند القدماء من علماء اللغة
+                        جودة النص وفعاليته وملائمته. لم يظهر مصطلح <cite>«علم لغة النص»</cite>
+                         في الدراسات اللغوية عند القدماء من علماء اللغة
                         العربية ولكننا نجد أنه بالغ الأهمية بدراسة / بقراءة
                         الأفكار التي يقدمها المحدثون الغربيون بهذا الشأن وقد
                         يستثنى عبد القاهر من الحكم السابق لأنه قدم نظرية النظم
@@ -177,7 +172,6 @@
                     class="tab-pane fade"
                     id="nav-profile-1"
                     role="tabpanel"
-                    aria-labelledby="nav-profile-tab"
                   >
                     <div class="px-3">
                       <p>الاسم: مهنا المهنا</p>
@@ -197,27 +191,23 @@
             <div class="card-body">
               <div class="bd-example m-0 border-0">
                 <nav>
-                  <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <div class="nav nav-tabs mb-3"  role="tablist">
                     <button
                       class="nav-link active"
-                      id="nav-home-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-home-2"
                       type="button"
                       role="tab"
-                      aria-controls="nav-home"
                       aria-selected="true"
                     >
                       التدوينة
                     </button>
                     <button
                       class="nav-link"
-                      id="nav-profile-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-profile-2"
                       type="button"
                       role="tab"
-                      aria-controls="nav-profile"
                       aria-selected="false"
                       tabindex="-1"
                     >
@@ -225,12 +215,11 @@
                     </button>
                   </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-content" >
                   <div
                     class="tab-pane fade active show"
                     id="nav-home-2"
                     role="tabpanel"
-                    aria-labelledby="nav-home-tab"
                   >
                     <div class="px-3">
                       <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
@@ -263,7 +252,6 @@
                     class="tab-pane fade"
                     id="nav-profile-2"
                     role="tabpanel"
-                    aria-labelledby="nav-profile-tab"
                   >
                     <div class="px-3">
                       <p>الاسم: مهنا المهنا</p>
@@ -283,27 +271,23 @@
             <div class="card-body">
               <div class="bd-example m-0 border-0">
                 <nav>
-                  <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <div class="nav nav-tabs mb-3"  role="tablist">
                     <button
                       class="nav-link active"
-                      id="nav-home-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-home-3"
                       type="button"
                       role="tab"
-                      aria-controls="nav-home"
                       aria-selected="true"
                     >
                       التدوينة
                     </button>
                     <button
                       class="nav-link"
-                      id="nav-profile-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-profile-3"
                       type="button"
                       role="tab"
-                      aria-controls="nav-profile"
                       aria-selected="false"
                       tabindex="-1"
                     >
@@ -311,12 +295,11 @@
                     </button>
                   </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-content" >
                   <div
                     class="tab-pane fade active show"
                     id="nav-home-3"
                     role="tabpanel"
-                    aria-labelledby="nav-home-tab"
                   >
                     <div class="px-3">
                       <h5 class="card-title">تجربتي في موضوع كذا وكذا</h5>
@@ -342,6 +325,12 @@
                         العربية ولكننا نجد أنه بالغ الأهمية بدراسة / بقراءة
                         الأفكار التي يقدمها المحدثون الغربيون بهذا الشأن وقد
                         يستثنى عبد القاهر من الحكم السابق لأنه قدم نظرية النظم
+                        <address>
+                          زورونا على<br>
+                          Example.com<br>
+                          Box 564, جدة<br>
+                          السعودية
+                          </address>
                       </blockquote>
                     </div>
                   </div>
@@ -349,7 +338,6 @@
                     class="tab-pane fade"
                     id="nav-profile-3"
                     role="tabpanel"
-                    aria-labelledby="nav-profile-tab"
                   >
                     <div class="px-3">
                       <p>الاسم: مهنا المهنا</p>
@@ -366,7 +354,7 @@
       </ol>
     </div>
 
-    <?php include("../../includes/header.php"); ?>
+    <?php include("../../includes/footer.php"); ?>
 
 
     <!-- Bootstrap JS -->

@@ -201,8 +201,8 @@
         <h5 class="card-header fs-4">المشاركات</h5>
         <div class="card-body">
           <ol class="list-group list-group-numbered">
+          <li>
             <a
-              type="button"
               href="generalTopic.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -212,8 +212,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 7</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="generalTopic.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -223,8 +224,9 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 10</span>
             </a>
+            </li>
+            <li>
             <a
-              type="button"
               href="generalTopic.php"
               class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
             >
@@ -234,6 +236,7 @@
               </div>
               <span class="badge bg-primary rounded-pill">الردود 15</span>
             </a>
+            </li>
           </ol>
         </div>
       </div>

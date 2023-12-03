@@ -28,14 +28,17 @@
 
   <?php include("../../includes/links.php"); ?>
     
-     <!-- video section -->
+     <!-- CV section -->
     <div class="container text-center mt-5">
     <div class="card">
         <h3 class="card-header">Resume</h3>
         <div class="card-body">
            
-            <object data="../../images/MouhanaAlmouhanaCV.pdf" width="100%" height="850">
-                <p>Your browser does not support embedded videos.</p>
+            <object data="../../images/mouhanaAlmouhanaCV.pdf" width="850" height="850">
+                <p>Your browser does not support embedded object.</p>
+            </object>
+            <object data="../../images/yazanCV.pdf" width="850" height="850">
+                <p>Your browser does not support embedded object.</p>
             </object>
         </div>
       </div>

@@ -1,4 +1,7 @@
 <!--Authors: Mouhana Almouhana,  Yazan Alshareef-->
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
@@ -20,8 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
       rel="stylesheet"
     />
-    <!--JAVASCRIPT-->
-    <script src="../../scripts/form-validation.js"></script>
+    
     <!--Title-->
     <title>STU.KAU</title>
   </head>
@@ -37,7 +39,7 @@
             <h2 class="text-center mt-2">Feedback Form</h2>
         </div>
         <div class="card-body">
-                <form action="#">
+                <form action="../../includes/form-insert.php" method="POST" id="Form">
 
                     <fieldset class="mb-4">
                         <legend>لو تزودنا ببعض بياناتك اذا ممكن</legend>
@@ -53,11 +55,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="feedback" class="form-label">الكلية</label>
-                            <select id="feedback-type" name="feedbackType" class="form-select" required>
+                            <select id="feedback-type" name="faculty" class="form-select">
                                 <option value="1">كلية الحاسبات وتقنية المعلومات</option>
-                  <option value="2">كلية الهندسة</option>
-                  <option value="3">كلية العلوم</option>
-                  <option value="3">كلية الاقتصاد والادارة</option>
+                                <option value="2">كلية الهندسة</option>
+                                <option value="3">كلية العلوم</option>
+                                <option value="4">كلية الاقتصاد والادارة</option>
                             </select>
                         </div>
                     </fieldset>
@@ -108,12 +110,13 @@
                     </fieldset>
         
                     <div class="text-center mb-3">
-                        <button type="submit" class="btn btn-outline-primary rounded-pill mb-3 col-sm-3"
-                        onclick="checkName(), checkEmail(), checkBox()"
+                        <button type="submit" class="btn btn-outline-primary rounded-pill mb-3 col-sm-3" name = "submit"
+                        onclick="valid()"
                         >ارسال</button>
 
                     </div>
                 </form>
+                
             
         </div>
       </div>
@@ -122,11 +125,14 @@
 
     <?php include("../../includes/footer.php"); ?>
 
+    <!--JAVASCRIPT-->
+    <script src="../../scripts/form-validation.js"></script>
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    
   </body>
 </html>
